@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = await response.json();
 
         if (response.ok) {
-          resultDiv.textContent = `Pairing Code: ${data.result.code}`;
+          resultDiv.textContent = `Pairing Code: ${data.code}`;
         } else {
           resultDiv.textContent = `Error: ${data.message || "Something went wrong."}`;
         }
